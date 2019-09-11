@@ -1,6 +1,9 @@
 # Write your code here.
+
+#creates an emoty array for the deli line.
 katz_deli = []
 
+# takes the line, checks if it empty and print message, if not empty prints current position and customer name.
 def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
@@ -14,14 +17,14 @@ def line(katz_deli)
 end
 
 
-
+# greets and assigns customer a position in line.
 def take_a_number(katz_deli, name)
   katz_deli << name
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
 
-
+# if line is empty prints message, if not prints who is next in line and removes first customer from the line array.
 def now_serving(katz_deli)
   if katz_deli.empty?
     puts "There is nobody waiting to be served!"
